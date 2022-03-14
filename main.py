@@ -49,12 +49,3 @@ def create_matrix(size):
 def visualize(matrix):
     plt.matshow(matrix)
     plt.show()
-
-
-
-
-
-
-
-
-

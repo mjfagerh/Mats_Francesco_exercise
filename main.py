@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def inital_state(num_elements):
+def initial_state(num_elements):
     base_matrix = np.zeros((num_elements, num_elements+2))
     first_pos = int(num_elements/2+1)
     base_matrix[0, first_pos] = 1
@@ -26,7 +26,7 @@ def rule_30(control):
     elif (control == np.array([0, 0, 0])).all():
         return 0
     else:
-        print("array is not deffined return none")
+        print("array is not defined return none")
         return None
 
 
@@ -36,7 +36,7 @@ def strip_ends(matrix):
 
 
 def create_matrix(size):
-    base_matrix = inital_state(size)
+    base_matrix = initial_state(size)
     for row in range(size-1):
         base_matrix[row]
         for col in range(1, size):
